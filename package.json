@@ -1,0 +1,61 @@
+{
+  "name": "carc-automation",
+  "version": "1.0.0",
+  "description": "COVID19 Calculator automation framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch",
+    "new-test": "nightwatch -c nightwatch.browserstack.conf.js --success first --kill-others",
+    "test:browserstack": "'sh ./test/browserstack.sh' --success first --kill-others",
+    "test:saucelabs": "nightwatch -c nightwatch.saucelabs.conf.js -e default,firefox",
+    "test:cucumber": "cucumber-js --require cucumber.conf.js --require step-definitions --format node_modules/cucumber-pretty",
+    "e2e-test-iphone8": "mkdir -p report && cucumber-js --require cucumber.conf.iphone8.js --require step-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report_iphone8.json",
+    "e2e-test-ipad6": "mkdir -p report && cucumber-js --require cucumber.conf.ipad6.js --require step-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report_ipad6.json",
+    "e2e-test-samsungs9": "mkdir -p report && cucumber-js --require cucumber.conf.samsungs9.js --require step-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report_samsungs9.json",
+    "e2e-test-samsungtab4": "mkdir -p report && cucumber-js --require cucumber.conf.samsungtab4.js --require step-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report_samsungtab4.json",
+    "e2e-test-iphone12": "mkdir -p report && cucumber-js --require cucumber.conf.iphone12.js --require step-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report_iphone12.json",
+    "e2e-test-ipad8": "mkdir -p report && cucumber-js --require cucumber.conf.ipad8.js --require step-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report_ipad8.json",
+    "e2e-test-samsungs20": "mkdir -p report && cucumber-js --require cucumber.conf.samsungs20.js --require step-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report_samsungs20.json",
+    "e2e-test-samsungtab7": "mkdir -p report && cucumber-js --require cucumber.conf.samsungtab7.js --require step-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report_samsungtab7.json",
+    "e2e-test-pixel3": "mkdir -p report && cucumber-js --require cucumber.conf.pixel3.js --require step-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report_pixel3.json",
+    "e2e-test-pixel5": "mkdir -p report && cucumber-js --require cucumber.conf.pixel5.js --require step-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report_pixel5.json",
+    "e2e-test-chrome": "mkdir -p report && cucumber-js --require cucumber.conf.chrome.js --require step-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report_chrome.json --parallel=5",
+    "e2e-test-firefox": "mkdir -p report && cucumber-js --require cucumber.conf.firefox.js --require step-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report_firefox.json",
+    "e2e-test-safari": "mkdir -p report && cucumber-js --require cucumber.conf.safari.js --require step-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report_safari.json",
+    "e2e-test-edge": "mkdir -p report && cucumber-js --require cucumber.conf.edge.js --require step-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report_edge.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EveristHealth/carc-automation.git"
+  },
+  "author": "Igor Grinberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EveristHealth/carc-automation/issues"
+  },
+  "homepage": "https://github.com/EveristHealth/carc-automation#readme",
+  "dependencies": {
+    "browserstack-local": "^1.4.8",
+    "geckodriver": "^1.22.1",
+    "import-cwd": "^3.0.0",
+    "install": "^0.13.0",
+    "npm": "^7.5.6",
+    "selenium-webdriver": "^4.0.0-beta.1",
+    "webdriver": "^5.23.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.0.0",
+    "cucumber": "^6.0.5",
+    "cucumber-html-reporter": "^5.3.0",
+    "cucumber-pretty": "^6.0.0",
+    "dotenv": "8.2.0",
+    "mkdirp": "^1.0.4",
+    "nightwatch": "^1.5.1",
+    "nightwatch-api": "^3.0.2",
+    "nightwatch-cucumber": "^9.1.3",
+    "selenium-server": "^3.141.59"
+  },
+  "directories": {
+    "test": "tests"
+  }
+}

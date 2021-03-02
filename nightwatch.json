@@ -1,0 +1,70 @@
+{
+    "src_folders" : ["tests"],
+    "output_folder" : "reports",
+    "page_objects_path" : "",
+    "globals_path" : "",
+   
+    "selenium" : {
+      "start_process" : false,
+      "server_path" : "",
+      "log_path" : "",
+      "host" : "hub-cloud.browserstack.com",
+      "port" : 80
+    },
+   
+    "test_workers" : {"enabled" : true, "workers" : "auto"},
+   
+    "test_settings" : {
+      "default" : {
+        "selenium_port"  : 80,
+        "selenium_host"  : "hub-cloud.browserstack.com",
+        "silent": false,
+        "screenshots" : {
+          "enabled" : true,
+          "path" : ""
+        },
+        "username" : "",
+        "access_key" : "",
+   
+        "skip_testcases_on_fail": false,
+   
+        "desiredCapabilities": {
+          "build":"Nightwatch-Selenium-Sample"
+        }
+      },
+   
+      "chrome": {
+        "desiredCapabilities": {
+            "os" : "Windows",
+            "os_version" : "10",
+            "browserName" : "Chrome",
+            "browser_version" : "87.0"
+        }
+      },
+      "safari" : {
+        "desiredCapabilities": {
+            "os" : "OS X",
+            "os_version" : "Catalina",
+            "browserName" : "Safari",
+            "browser_version" : "13.1"
+        }
+  },
+  "firefox" : {
+    "desiredCapabilities": {
+        "os" : "Windows",
+        "os_version" : "10",
+        "browserName" : "Firefox",
+        "browser_version" : "latest"
+    }
+  },
+      "edge" : {
+        "desiredCapabilities": {
+            "os" : "Windows",
+            "os_version" : "10",
+            "browserName" : "Edge",
+            "browser_version" : "latest",
+            "resolution" : "1920x1080"
+        }
+      }
+    }
+  }

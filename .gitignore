@@ -1,0 +1,9 @@
+node_modules
+*.log
+report
+test_output
+.env
+nightwatch.local.conf.js
+chromedriver.log
+test.feature
+test_output

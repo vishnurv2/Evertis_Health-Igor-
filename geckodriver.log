@@ -1,0 +1,36 @@
+/Users/igorgrinberg/everisthealth/carc-automation/node_modules/geckodriver/geckodriver: error: Address already in use (os error 48)
+geckodriver 0.27.0 (7b8c4f32cdde 2020-07-28 18:16 +0000) 
+WebDriver implementation for Firefox
+
+USAGE:
+    geckodriver [FLAGS] [OPTIONS]
+
+FLAGS:
+        --connect-existing    Connect to an existing Firefox instance
+    -h, --help                Prints this message
+        --jsdebugger          Attach browser toolbox debugger for Firefox
+    -v                        Log level verbosity (-v for debug and -vv for trace level)
+    -V, --version             Prints version and copying information
+
+OPTIONS:
+    -b, --binary <BINARY>           Path to the Firefox binary
+        --log <LEVEL>               Set Gecko log level [possible values: fatal, error, warn, info, config, debug,
+                                    trace]
+        --marionette-host <HOST>    Host to use to connect to Gecko [default: 127.0.0.1]
+        --marionette-port <PORT>    Port to use to connect to Gecko [default: system-allocated port]
+        --host <HOST>               Host IP to use for WebDriver server [default: 127.0.0.1]
+    -p, --port <PORT>               Port to use for WebDriver server [default: 4444]
+/Users/igorgrinberg/everisthealth/carc-automation/node_modules/geckodriver/geckodriver: error: The argument '--port <PORT>' was provided more than once, but cannot be used multiple times
+
+USAGE:
+    geckodriver --marionette-host <HOST> --host <HOST> --port <PORT>
+
+For more information try --help
+
+/Users/igorgrinberg/everisthealth/carc-automation/node_modules/geckodriver/geckodriver: error: The argument '--port <PORT>' was provided more than once, but cannot be used multiple times
+
+USAGE:
+    geckodriver --marionette-host <HOST> --host <HOST> --port <PORT>
+
+For more information try --help
+

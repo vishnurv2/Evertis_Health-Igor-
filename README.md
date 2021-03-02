@@ -4,7 +4,11 @@ Automation FW based on Nightwatch.js
 Dependencies :
 
 npm install
+
+
 npm install --save-dev nightwatch-api nightwatch chromedriver cucumber-pretty
+
+
 npm install --save-dev @cucumber/cucumber
 
 
